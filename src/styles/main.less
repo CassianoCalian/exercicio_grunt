@@ -1,0 +1,57 @@
+@first_font: Poppins, "sans-serif";
+@second_font: Lobster, cursive;
+@color_text: #fff;
+@background_color: #95de90;
+@button: yellow;
+@style_color: black;
+
+body {
+  background-color: @background_color;
+  font-family: @first_font;
+  color: @color_text;
+}
+
+h1 {
+  font-family: @second_font;
+  color: @color_text;
+  font-size: 4em;
+}
+
+main {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2em;
+  text-align: center;
+}
+
+button {
+  padding: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 16px;
+  font-size: 1.3em;
+  border-radius: 8px;
+  background-color: @button;
+  color: @style_color;
+  font-family: @first_font;
+}
+
+input {
+  display: block;
+  margin: 16px auto 0;
+  font-size: 2em;
+  max-width: 120px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  color: @color_text;
+  border-bottom: 6px solid @color_text;
+}
+
+.resultado {
+  padding: 16px;
+  margin-top: 120px;
+  border: 8px dotted @button;
+  display: none;
+}
